@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Profile">
+
+
+    <Button
+        android:id="@+id/logout"
+        android:layout_width="370dp"
+        android:layout_height="50dp"
+        android:background="@drawable/rounded_button"
+        android:fontFamily="@font/poppinsbold"
+        android:text="LOGOUT"
+        android:textSize="20dp"
+        app:backgroundTint="@color/btncolor"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.868" />
+
+    <TextView
+        android:id="@+id/emailAddress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="88dp"
+        android:fontFamily="@font/poppinsmedium"
+        android:text="Email Address:"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@+id/greet"
+        app:layout_constraintTop_toTopOf="@+id/greet" />
+
+
+    <TextView
+        android:id="@+id/userEmailAddress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:fontFamily="@font/poppinsmedium"
+        android:textColor="#FFB55E1B"
+        android:textSize="20sp"
+        app:layout_constraintLeft_toLeftOf="@+id/emailAddress"
+        app:layout_constraintTop_toBottomOf="@+id/emailAddress" />
+
+
+    <TextView
+        android:id="@+id/hosName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/poppinsmedium"
+        android:text="Full Name:"
+        android:textSize="20sp"
+        app:layout_constraintLeft_toLeftOf="@+id/greet"
+        app:layout_constraintTop_toBottomOf="@+id/userEmailAddress" />
+
+
+    <TextView
+        android:id="@+id/userFullName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:textColor="#FFB55E1B"
+        android:fontFamily="@font/poppinsmedium"
+        android:textSize="20sp"
+        app:layout_constraintLeft_toLeftOf="@+id/emailAddress"
+        app:layout_constraintTop_toBottomOf="@+id/hosName" />
+
+    <TextView
+        android:id="@+id/hosAddress"
+        android:layout_width="94dp"
+        android:layout_height="37dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="12dp"
+        android:fontFamily="@font/poppinsmedium"
+        android:text="Age:"
+        android:textSize="20sp"
+        app:layout_constraintLeft_toLeftOf="@+id/hosName"
+        app:layout_constraintTop_toBottomOf="@+id/userFullName" />
+
+    <TextView
+        android:id="@+id/userAge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:textColor="#FFB55E1B"
+        android:fontFamily="@font/poppinsmedium"
+        android:textSize="20sp"
+        app:layout_constraintLeft_toLeftOf="@+id/hosName"
+        app:layout_constraintTop_toBottomOf="@+id/hosAddress" />
+
+    <TextView
+        android:id="@+id/greet"
+        android:textColor="#FFB55E1B"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/poppinsmedium"
+        android:textSize="24sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

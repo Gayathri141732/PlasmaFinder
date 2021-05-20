@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".MainActivity">
+
+
+        <TextView
+            android:id="@+id/banner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Plasma Finder"
+            android:textColor="@color/textcolor"
+            android:textSize="40sp"
+            android:gravity="center_horizontal"
+            android:fontFamily="@font/poppinsbold"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:layout_marginTop="50dp"
+            />
+
+        <Button
+            android:id="@+id/Recipient"
+            android:layout_width="342dp"
+            android:layout_height="50dp"
+            android:layout_marginBottom="227dp"
+            android:layout_marginEnd="162dp"
+            android:layout_marginLeft="156dp"
+            android:layout_marginRight="162dp"
+            android:layout_marginStart="156dp"
+            android:layout_marginTop="456dp"
+            android:background="@drawable/rounded_button"
+            android:fontFamily="@font/poppinsbold"
+            android:text="Recipient"
+            android:textSize="20sp"
+            app:backgroundTint="@color/btncolor"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.482"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="1.0" />
+
+        <Button
+            android:id="@+id/hospital"
+            android:layout_width="342dp"
+            android:layout_height="52dp"
+            android:background="@drawable/rounded_button"
+            android:fontFamily="@font/poppinsbold"
+            android:text="Hospital"
+            android:textSize="20sp"
+            app:backgroundTint="@color/btncolor"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.517"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@id/Recipient"
+            app:layout_constraintVertical_bias="0.373" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="77dp"
+            android:layout_height="73dp"
+            android:background="@drawable/ic_heartfill"
+            android:backgroundTint="#DD1515"
+            app:layout_constraintBottom_toTopOf="@+id/Recipient"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/banner"
+            app:layout_constraintVertical_bias="0.534" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
